@@ -15,6 +15,8 @@ class RootComponent extends PureComponent {
     static propTypes = {
         isOpen: PropTypes.bool.isRequired,
         children: PropTypes.any,
+        duration: PropTypes.string,
+        timingFunc: PropTypes.string,
     };
 
     getSnapshotBeforeUpdate(prevProps, prevState) {

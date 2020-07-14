@@ -50,13 +50,15 @@ function App() {
 
 The data passed to react-faq-component is an object having below keys(mentioned in the table).
 
-| attribute |  type   | optional | details                      |
-| --------- | :-----: | :------: | :--------------------------- |
-| isOpen    | boolean |  false   | flag to toggle the component |
+| attribute  |  type   | optional | defaultVal | details                       |
+| ---------- | :-----: | :------: | :--------: | :---------------------------- |
+| isOpen     | boolean |  false   |  `false`   | flag to toggle the component  |
+| duration   | string  |   true   |   `0.3s`   | duration of transition        |
+| timingFunc | string  |   true   |   `ease`   | timing-function of transition |
 
 ## Demo gif
 
-![Screenshot 1](/example/accordion.gif?raw=true "closed state")
+![Screenshot 1](/example/accordion.gif?raw=true "demo gif")
 
 ## License
 
