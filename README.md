@@ -6,7 +6,7 @@
 [![Test Status](https://github.com/binodswain/react-accordion-comp/workflows/Test/badge.svg)](https://github.com/binodswain/react-accordion-comp/actions?query=workflow%3ATest)
 [![Build Status](https://github.com/binodswain/react-accordion-comp/workflows/Build/badge.svg)](https://github.com/binodswain/react-accordion-comp/actions?query=workflow%3ABuild)
 
-React package to render accordion component.
+React package📦 to render accordion component.
 [view demo](https://binodswain.github.io/react-accordion-comp/)
 
 ## Install
@@ -64,7 +64,7 @@ function App() {
 
 ## props
 
-The data passed to react-faq-component is an object having below keys(mentioned in the table).
+The props passed to react-accordion-comp.
 
 | attribute  |  type   | optional | defaultVal | details                       |
 | ---------- | :-----: | :------: | :--------: | :---------------------------- |
