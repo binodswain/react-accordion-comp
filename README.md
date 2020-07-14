@@ -17,6 +17,22 @@ npm install --save react-faq-component
 
 ## Usage
 
+### Import styles to application.
+
+import in a SCSS file.
+
+```scss
+@import "~react-accordion-comp/dist/styles.css";
+```
+
+or in JSX file
+
+```jsx
+import "react-accordion-comp/dist/styles.css";
+```
+
+### Import component to application.
+
 ```jsx
 import React, { useState } from 'react';
 import Accordion from "react-accordion-comp";

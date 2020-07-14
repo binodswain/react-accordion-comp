@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './App.scss';
 import Accordion from "react-accordion-comp";
 import content from "./content";
+// import 'react-accordion-comp/dist/styles.css';
 
 function App() {
   const [flag, setFlag] = useState(false);
