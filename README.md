@@ -1,26 +1,63 @@
-[![Test Status](https://github.com/binodswain/react-lib-template/workflows/Test/badge.svg)](https://github.com/binodswain/react-lib-template/actions?query=workflow%3ATest)
-[![Build Status](https://github.com/binodswain/react-lib-template/workflows/Build/badge.svg)](https://github.com/binodswain/react-lib-template/actions?query=workflow%3ABuild)
+# react-accordion-comp
 
-# react-lib-template
-A sample opinionated template to build npm packages. Uses below technologies to test and build the package.
-- Reactjs
-- Babel
-- Rollup
+[![release](https://badgen.net/npm/v/react-accordion-comp)](https://www.npmjs.com/package/react-accordion-comp)
+[![open issues](https://badgen.net/github/open-issues/binodswain/react-accordion-comp)](https://github.com/binodswain/react-accordion-comp/issues)
+[![license](https://badgen.net/github/license/binodswain/react-accordion-comp)](https://github.com/binodswain/react-accordion-comp/blob/master/LICENSE)
+[![Test Status](https://github.com/binodswain/react-accordion-comp/workflows/Test/badge.svg)](https://github.com/binodswain/react-accordion-comp/actions?query=workflow%3ATest)
+[![Build Status](https://github.com/binodswain/react-accordion-comp/workflows/Build/badge.svg)](https://github.com/binodswain/react-accordion-comp/actions?query=workflow%3ABuild)
 
-# Running the code with example app
-First, setup a CRA to use the code as package.
+React package to render accordion component.
+[view demo](https://binodswain.github.io/react-accordion-comp/)
+
+## Install
+
 ```bash
-npx create-react-app example
+npm install --save react-faq-component
 ```
-In package.json, add the package name as a dependencies.
-"react-lib-template": "file:..",
 
-Note: replace `react-lib-template` with the name present in package.json in root dir.
+## Usage
 
-Now run `npm start` script from root dir and from example/ dir.
+```jsx
+import React, { useState } from 'react';
+import Accordion from "react-accordion-comp";
 
-# GitHub Actions
-The template has two actions already setup. Replace **react-lib-template** accordingly.
-- **Test**: to run the test script.
-- **Build**: to test, lint and build the package
+function App() {
+    const [flag, setFlag] = useState(false);
 
+    return (
+        <div className="container">
+            <button onClick={()=>setFlag1(!flag1)}>
+                toggle content
+            </button>
+            <Accordion isOpen={flag1}>
+                <div className="red">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        In sed tempor sem. Aenean vel turpis feugiat,
+                        ultricies metus at, consequat velit. Curabitur est nibh,
+                        varius in tellus nec, mattis pulvinar metus.
+                        In maximus cursus lorem, nec laoreet velit eleifend vel.
+                        Ut aliquet mauris tortor, sed egestas libero interdum vitae.
+                        Fusce sed commodo purus, at tempus turpis.
+                    </p>
+                </div>
+            </Accordion>
+        </div>
+}
+```
+
+## props
+
+The data passed to react-faq-component is an object having below keys(mentioned in the table).
+
+| attribute |  type   | optional | details                      |
+| --------- | :-----: | :------: | :--------------------------- |
+| isOpen    | boolean |  false   | flag to toggle the component |
+
+## Demo gif
+
+![Screenshot 1](/example/accordion.gif?raw=true "closed state")
+
+## License
+
+MIT © [binodswain](https://github.com/binodswain)
