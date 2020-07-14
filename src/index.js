@@ -1,4 +1,5 @@
 import React, { PureComponent } from "react";
+import PropTypes from "prop-types";
 import "./styles.scss";
 
 class RootComponent extends PureComponent {
@@ -11,7 +12,10 @@ class RootComponent extends PureComponent {
         };
     }
 
-    static propTypes = {};
+    static propTypes = {
+        isOpen: PropTypes.bool.isRequired,
+        children: PropTypes.any,
+    };
 
     getSnapshotBeforeUpdate(prevProps, prevState) {
         const { isOpen: wasOpen } = prevProps;
