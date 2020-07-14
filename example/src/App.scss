@@ -12,7 +12,6 @@
     .red {
         background-color: red;
         color: white;
-        margin: 1em;
         padding: 1em;
     }
 
@@ -23,6 +22,14 @@
 
     button {
         padding: 0.5em 1em;
+        margin: 1em 0;
+    }
+
+    .with-padding {
+        padding: 0.5em 1em;
+    }
+
+    hr {
         margin: 1em 0;
     }
 }
