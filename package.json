@@ -1,6 +1,6 @@
 {
     "name": "react-accordion-comp",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "main": "dist/index.js",
     "module": "dist/index.es.js",
     "description": "React package to build accordion view",
@@ -74,8 +74,12 @@
         "npm": ">=5"
     },
     "keywords": [
-        "react", "react-accordion-comp", "react-accordion", "accordion",
-        "reactjs-component", "ui-components"
+        "react",
+        "react-accordion-comp",
+        "react-accordion",
+        "accordion",
+        "reactjs-component",
+        "ui-components"
     ],
     "author": "“Binod <binodkumarswain94@gmail.com> (binodswain@github.io)",
     "license": "MIT",
