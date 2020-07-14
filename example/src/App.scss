@@ -1,1 +1,28 @@
-@import "~react-lib-template/dist/styles.css";
+@import "~react-accordion-comp/dist/styles.css";
+
+.container {
+    max-width: 600px;
+    margin: 0.5em auto;
+
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .red {
+        background-color: red;
+        color: white;
+        margin: 1em;
+        padding: 1em;
+    }
+
+    .green {
+        background-color: green;
+        color: white;
+    }
+
+    button {
+        padding: 0.5em 1em;
+        margin: 1em 0;
+    }
+}

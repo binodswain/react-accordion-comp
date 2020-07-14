@@ -1,9 +1,9 @@
 {
-    "name": "react-lib-template",
+    "name": "react-accordion-comp",
     "version": "0.0.1",
     "main": "dist/index.js",
     "module": "dist/index.es.js",
-    "description": "Sample React package to build npm packages",
+    "description": "React package to build accordion view",
     "scripts": {
         "test": "jest --verbose ./test",
         "lint:js": "eslint src/*.js",
