@@ -7,14 +7,13 @@ function App() {
   const [flag, setFlag] = useState(false);
   const [flag1, setFlag1] = useState(false);
   const [flag2, setFlag2] = useState(false);
-  // console.log(flag);
 
   return (
     <div className="container">
       <button onClick={()=>setFlag1(!flag1)}>
         toggle content
       </button>
-      <Accordion isOpen={flag1}>
+      <Accordion isOpen={flag1} duration={`1000ms`}>
         <div className="red">
           <p>
             {content()}
@@ -39,7 +38,7 @@ function App() {
       <button onClick={()=>setFlag(!flag)}>
         toggle content
       </button>
-      <Accordion isOpen={flag}>
+      <Accordion isOpen={flag} duration={`5s`} timingFunc={'linear'}>
         <div className="red">
           <p>
             {content(24)}

@@ -1,16 +1,21 @@
 .react-accordion-comp {
+    $default-duration: 0.3s;
+    $default-timing-function: ease;
+
+    @mixin transition {
+        transition: height var(--transition-duration, $default-duration);
+        transition-timing-function: var(--timing-function, $default-timing-function);
+    }
+
     &.closing {
-        position: relative;
         height: 0;
         overflow: hidden;
-        transition: height 0.35s ease;
+        @include transition;
     }
 
     &.opening {
-        position: relative;
-        display: block;
         overflow: hidden;
-        transition: height 0.35s ease;
+        @include transition;
     }
 
     &.close {
@@ -18,6 +23,6 @@
     }
 
     &.open {
-        // display: block;
+        display: block;
     }
 }

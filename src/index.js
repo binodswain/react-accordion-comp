@@ -58,17 +58,25 @@ class RootComponent extends PureComponent {
     };
 
     render() {
-        const { children, isOpen } = this.props;
+        const { children, isOpen, duration, timingFunc } = this.props;
         const { height, className } = this.state;
+
+        const styleConfig = {
+            "--transition-duration": duration,
+            "--timing-function": timingFunc,
+        };
+
+        const styleObj = {
+            [className === "close" || className === "open" ? "" : "height"]: height,
+            ...styleConfig,
+        };
 
         return (
             <div
                 className={`react-accordion-comp ${className}`}
                 onTransitionEnd={this.finishTransition}
                 ref={this.itemRef}
-                style={{
-                    height,
-                }}
+                style={styleObj}
             >
                 {children}
             </div>
