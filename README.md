@@ -42,10 +42,10 @@ function App() {
 
     return (
         <div className="container">
-            <button onClick={()=>setFlag1(!flag1)}>
+            <button onClick={()=>setFlag(!flag)}>
                 toggle content
             </button>
-            <Accordion isOpen={flag1}>
+            <Accordion isOpen={flag}>
                 <div className="red">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -74,7 +74,7 @@ The props passed to react-accordion-comp.
 
 ## Demo gif
 
-![Screenshot 1](/example/accordion.gif?raw=true "demo gif")
+![Screenshot 1](https://github.com/binodswain/react-accordion-comp/raw/master/example/accordion.gif "demo gif")
 
 ## License
 
