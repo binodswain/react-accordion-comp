@@ -6,12 +6,12 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "babel-plugin-prismjs": "^2.0.1",
+    "prismjs": "^1.20.0",
     "react": "^16.13.1",
+    "react-accordion-comp": "file:..",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
-  },
-  "devDependencies": {
-    "react-accordion-comp": "file:.."
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,6 +21,26 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "babel": {
+    "plugins": [
+      [
+        "prismjs",
+        {
+          "languages": [
+            "javascript",
+            "css",
+            "markup",
+            "jsx"
+          ],
+          "plugins": [
+            "line-numbers"
+          ],
+          "theme": "tommorow",
+          "css": true
+        }
+      ]
+    ]
   },
   "browserslist": {
     "production": [
