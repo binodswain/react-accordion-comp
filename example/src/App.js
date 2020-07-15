@@ -4,13 +4,26 @@ import Accordion from "react-accordion-comp";
 import content from "./content";
 // import 'react-accordion-comp/dist/styles.css';
 
+import LandingPage from "./pages/landingPage";
+
+const isDocs = true;
+
 function App() {
   const [flag, setFlag] = useState(false);
   const [flag1, setFlag1] = useState(false);
   const [flag2, setFlag2] = useState(false);
 
+  if (isDocs) {
+    return (
+      <div className="">
+        <LandingPage/>
+      </div>
+    );
+  }
+
+
   return (
-    <div className="container">
+    <div className="container page">
       <button onClick={()=>setFlag1(!flag1)}>
         toggle content
       </button>
