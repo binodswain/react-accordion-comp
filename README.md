@@ -12,7 +12,7 @@ React package📦 to render accordion component.
 ## Install
 
 ```bash
-npm install --save react-faq-component
+npm install --save react-accordion-comp
 ```
 
 ## Usage
