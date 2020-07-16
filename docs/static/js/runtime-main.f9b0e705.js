@@ -1,12 +1,12 @@
 !(function (e) {
     function r(r) {
-        for (var n, l, a = r[0], p = r[1], f = r[2], c = 0, s = []; c < a.length; c++)
-            (l = a[c]),
+        for (var n, l, a = r[0], p = r[1], c = r[2], f = 0, s = []; f < a.length; f++)
+            (l = a[f]),
             Object.prototype.hasOwnProperty.call(o, l) && o[l] && s.push(o[l][0]),
             (o[l] = 0);
         for (n in p) Object.prototype.hasOwnProperty.call(p, n) && (e[n] = p[n]);
         for (i && i(r); s.length; ) s.shift()();
-        return u.push.apply(u, f || []), t();
+        return u.push.apply(u, c || []), t();
     }
     function t() {
         for (var e, r = 0; r < u.length; r++) {
@@ -70,12 +70,12 @@
     (l.o = function (e, r) {
         return Object.prototype.hasOwnProperty.call(e, r);
     }),
-    (l.p = "/");
+    (l.p = "/react-accordion-comp/");
     let a = (this.webpackJsonpexample = this.webpackJsonpexample || []),
         p = a.push.bind(a);
     (a.push = r), (a = a.slice());
-    for (let f = 0; f < a.length; f++) r(a[f]);
+    for (let c = 0; c < a.length; c++) r(a[c]);
     var i = p;
     t();
 })([]);
-//# sourceMappingURL=runtime-main.1bd49777.js.map
+//# sourceMappingURL=runtime-main.f9b0e705.js.map

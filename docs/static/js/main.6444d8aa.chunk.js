@@ -100,15 +100,15 @@
             }
             const O = (function (e) {
                 function t(e) {
-                    let n, a, r;
+                    let n, a;
                     return (
                         (function (e, t) {
                             if (!(e instanceof t))
                                 throw new TypeError("Cannot call a class as a function");
                         })(this, t),
-                        (a = this),
-                        (r = b(t).call(this, e)),
-                        (n = !r || ("object" !== typeof r && "function" !== typeof r) ? E(a) : r),
+                        this,
+                        (a = b(t).call(this, e)),
+                        (n = !a || ("object" != typeof a && "function" != typeof a) ? E(this) : a),
                         d(E(n), "setHeight", function () {
                             const e = n.props.isOpen,
                                 t = n.itemRef.current.scrollHeight;
@@ -123,10 +123,10 @@
                         n
                     );
                 }
-                let n, a, r;
+                let n, a;
                 return (
                     (function (e, t) {
-                        if ("function" !== typeof t && null !== t)
+                        if ("function" != typeof t && null !== t)
                             throw new TypeError(
                                 "Super expression must either be null or a function",
                             );
@@ -134,7 +134,7 @@
                             constructor: { value: e, writable: !0, configurable: !0 },
                         })),
                         t && g(e, t);
-                    })(t, e),
+                    })(t, s.PureComponent),
                     (n = t),
                     (a = [
                         {
@@ -179,10 +179,9 @@
                             },
                         },
                     ]) && p(n.prototype, a),
-                    r && p(n, r),
                     t
                 );
-            })(s.PureComponent);
+            })();
             d(O, "propTypes", {
                 isOpen: m.a.bool.isRequired,
                 children: m.a.any,
@@ -570,4 +569,4 @@
     ],
     [[7, 1, 2]],
 ]);
-//# sourceMappingURL=main.d2c2f580.chunk.js.map
+//# sourceMappingURL=main.6444d8aa.chunk.js.map

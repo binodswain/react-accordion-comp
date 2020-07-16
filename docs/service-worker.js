@@ -13,7 +13,7 @@
 
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
-importScripts("/precache-manifest.d7346f5566f9b4ab682fcf209c149538.js");
+importScripts("/react-accordion-comp/precache-manifest.4c45539bb25bfe21258aecff8d95c01c.js");
 
 self.addEventListener("message", (event) => {
     if (event.data && event.data.type === "SKIP_WAITING") {
@@ -31,6 +31,9 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/index.html"), {
-    blacklist: [/^\/_/, /\/[^/?]+\.[^/]+$/],
-});
+workbox.routing.registerNavigationRoute(
+    workbox.precaching.getCacheKeyForURL("/react-accordion-comp/index.html"),
+    {
+        blacklist: [/^\/_/, /\/[^/?]+\.[^/]+$/],
+    },
+);
