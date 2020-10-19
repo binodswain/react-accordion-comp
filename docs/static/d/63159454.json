@@ -1,0 +1,11 @@
+{
+    "data": {
+        "site": {
+            "siteMetadata": {
+                "title": "react-accordion-comp",
+                "description": "React package📦 to render accordion component.",
+                "author": "@swain_binod"
+            }
+        }
+    }
+}

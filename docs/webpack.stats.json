@@ -1,0 +1,93 @@
+{
+    "errors": [],
+    "warnings": [],
+    "namedChunkGroups": {
+        "polyfill": {
+            "chunks": [3, 0, 7],
+            "assets": [
+                "webpack-runtime-06c5d5b758b1d02fb985.js",
+                "webpack-runtime-06c5d5b758b1d02fb985.js.map",
+                "commons-4013dde493871d2cf21d.js",
+                "commons-4013dde493871d2cf21d.js.map",
+                "polyfill-1d7b72fd669edd5b5816.js",
+                "polyfill-1d7b72fd669edd5b5816.js.map"
+            ],
+            "children": {},
+            "childAssets": {}
+        },
+        "app": {
+            "chunks": [3, 1, 0, 4],
+            "assets": [
+                "webpack-runtime-06c5d5b758b1d02fb985.js",
+                "webpack-runtime-06c5d5b758b1d02fb985.js.map",
+                "framework-54259c15116b24b3240e.js",
+                "framework-54259c15116b24b3240e.js.map",
+                "commons-4013dde493871d2cf21d.js",
+                "commons-4013dde493871d2cf21d.js.map",
+                "app-a890422fbcf6e52e1e46.js",
+                "app-a890422fbcf6e52e1e46.js.map"
+            ],
+            "children": {},
+            "childAssets": {}
+        },
+        "component---src-pages-demo-more-js": {
+            "chunks": [1, 2, 0, 5],
+            "assets": [
+                "framework-54259c15116b24b3240e.js",
+                "framework-54259c15116b24b3240e.js.map",
+                "styles.99304c42f194ea9e3b25.css",
+                "styles-2d82ac8e3afc0c213061.js",
+                "styles-2d82ac8e3afc0c213061.js.map",
+                "commons-4013dde493871d2cf21d.js",
+                "commons-4013dde493871d2cf21d.js.map",
+                "component---src-pages-demo-more-js-a95d17759fc23c0bbf94.js",
+                "component---src-pages-demo-more-js-a95d17759fc23c0bbf94.js.map"
+            ],
+            "children": {},
+            "childAssets": {}
+        },
+        "component---src-pages-index-js": {
+            "chunks": [1, 2, 0, 6],
+            "assets": [
+                "framework-54259c15116b24b3240e.js",
+                "framework-54259c15116b24b3240e.js.map",
+                "styles.99304c42f194ea9e3b25.css",
+                "styles-2d82ac8e3afc0c213061.js",
+                "styles-2d82ac8e3afc0c213061.js.map",
+                "commons-4013dde493871d2cf21d.js",
+                "commons-4013dde493871d2cf21d.js.map",
+                "component---src-pages-index-js-6f17beac6ec5fe542ac8.js",
+                "component---src-pages-index-js-6f17beac6ec5fe542ac8.js.map"
+            ],
+            "children": {},
+            "childAssets": {}
+        }
+    },
+    "assetsByChunkName": {
+        "polyfill": [
+            "webpack-runtime-06c5d5b758b1d02fb985.js",
+            "commons-4013dde493871d2cf21d.js",
+            "polyfill-1d7b72fd669edd5b5816.js"
+        ],
+        "app": [
+            "webpack-runtime-06c5d5b758b1d02fb985.js",
+            "framework-54259c15116b24b3240e.js",
+            "commons-4013dde493871d2cf21d.js",
+            "app-a890422fbcf6e52e1e46.js"
+        ],
+        "component---src-pages-demo-more-js": [
+            "framework-54259c15116b24b3240e.js",
+            "styles.99304c42f194ea9e3b25.css",
+            "styles-2d82ac8e3afc0c213061.js",
+            "commons-4013dde493871d2cf21d.js",
+            "component---src-pages-demo-more-js-a95d17759fc23c0bbf94.js"
+        ],
+        "component---src-pages-index-js": [
+            "framework-54259c15116b24b3240e.js",
+            "styles.99304c42f194ea9e3b25.css",
+            "styles-2d82ac8e3afc0c213061.js",
+            "commons-4013dde493871d2cf21d.js",
+            "component---src-pages-index-js-6f17beac6ec5fe542ac8.js"
+        ]
+    }
+}
