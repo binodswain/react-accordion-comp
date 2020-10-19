@@ -12,7 +12,7 @@
         "start": "rollup -c -w",
         "clean": "rimraf build dist",
         "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-        "build:website": "cd website && npm run build"
+        "website": "node ./scripts/update_website.js"
     },
     "files": [
         "dist",

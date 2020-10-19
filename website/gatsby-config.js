@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/",
+  pathPrefix: "/react-accordion-comp",
   siteMetadata: {
     title: `react-accordion-comp`,
     description: `React package📦 to render accordion component.`,
