@@ -19,29 +19,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "babel": {
-    "plugins": [
-      [
-        "prismjs",
-        {
-          "languages": [
-            "javascript",
-            "css",
-            "markup",
-            "jsx"
-          ],
-          "plugins": [
-            "line-numbers"
-          ],
-          "theme": "tommorow",
-          "css": true
-        }
-      ]
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -53,6 +30,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "homepage": "https://binodswain.github.io/react-accordion-comp/"
+  }
 }
