@@ -4,9 +4,9 @@ import Accordion from "react-accordion-comp";
 import content from "../content";
 // import 'react-accordion-comp/dist/styles.css';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Prism from "prismjs"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Prism from "prismjs";
 
 function App() {
     const [flag, setFlag] = useState(false);
@@ -20,9 +20,9 @@ function App() {
     useEffect(() => {
         // call the highlightAll() function to style our code blocks
         setTimeout(() => {
-            Prism.highlightAll()
-        }, 0)
-    }, [])
+            Prism.highlightAll();
+        }, 0);
+    }, []);
 
     return (
         <Layout>
@@ -162,7 +162,7 @@ function App() {
         </Accordion>
     </div>
 }
-`
+`;
 
 const htmlcode2 = `import React, { useState } from 'react';
 
@@ -182,7 +182,7 @@ function App() {
         </Accordion>
     </div>
 }
-`
+`;
 
 const htmlcode3 = `import React, { useState } from 'react';
 
@@ -208,4 +208,4 @@ function App() {
         </div>
     </div>
 }
-`
+`;
